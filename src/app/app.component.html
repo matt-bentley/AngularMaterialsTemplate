@@ -1,0 +1,66 @@
+<md-toolbar color="primary">
+  <a md-button button class="toolbar-button" routerLink="home">
+    <div>     
+      <span>
+        <img alt="angular" class="docs-angular-logo" src="https://material.angular.io/assets/img/homepage/angular-white-transparent.svg">
+        <span style="padding-left:35px">HOME</span>
+      </span>
+    </div>
+  </a>
+  <a md-button button class="toolbar-button" href="https://angular.io/" target="_blank">
+    <div>     
+      <span>
+        <span>ANGULAR</span>
+      </span>
+    </div>
+  </a>
+  <a md-button button class="toolbar-button" href="https://material.angular.io/" target="_blank">
+    <div>     
+      <span>
+        <span>MATERIAL</span>
+      </span>
+    </div>
+  </a>
+  <a md-button button class="toolbar-button right" style="margin-right:30px;" href="https://github.com/matt-bentley/" target="_blank">
+    <div>     
+      <span>
+        <img class="docs-github-logo" src="https://material.angular.io/assets/img/homepage/github-circle-white-transparent.svg" alt="github">
+        <span style="padding-left:35px">GITHUB</span>
+      </span>
+    </div>
+  </a>
+</md-toolbar>
+
+<md-sidenav-container class="example-sidenav-fab-container">
+  <md-sidenav #sidenav mode="side" opened="true">
+    <div class="example-scrolling-content">
+      <h3>Menu 1</h3>
+      <ul>
+        <li>
+          <a routerLink="home" routerLinkActive="active-link">Home</a>
+        </li>
+        <li>
+          <a routerLink="second" routerLinkActive="active-link">Second</a>
+        </li>
+      </ul>
+      <h3>Menu 2</h3>
+      <ul>
+        <li>
+          <a routerLink="home" routerLinkActive="active-link">Home</a>
+        </li>
+        <li>
+          <a routerLink="second" routerLinkActive="active-link">Second</a>
+        </li>
+      </ul>
+    </div>
+  </md-sidenav>
+  <div class="example-scrolling-content">
+    <router-outlet></router-outlet> 
+    <md-toolbar color="primary" class="footer">
+      <span>
+        <img alt="angular" class="docs-angular-logo" src="https://material.angular.io/assets/img/homepage/angular-white-transparent.svg">
+        <span class="footer-title">Matt Bentley</span>
+      </span>
+    </md-toolbar>
+  </div>
+</md-sidenav-container>
